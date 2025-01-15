@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <title>SmileSlot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #ffffff, #e5d9f2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 50px auto 20px auto; /* Adjusted margin to move content wrapper higher */
+        gap: 20px;
+      }
+
+      .container {
+        flex: 1;
+        text-align: left; /* Align text to the left */
+        animation: transitionIn-Y-bottom 0.5s;
+        backdrop-filter: blur(10px);
+      }
+
+      .heading-text {
+        font-size: 34px; /* Increase font size */
+        font-weight: 700;
+        line-height: 45px;
+        margin-bottom: 0;
+        color: #333;
+      }
+
+      .sub-text2 {
+        font-size: 20px; /* Increase font size */
+        color: #555;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+
+      .btn-primary {
+        background-color: #a594f9;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #a594f9;
+      }
+
+      .logo-image {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo-img {
+        width: 40px; /* Adjust the width as needed */
+        margin-right: 10px; /* Adjust the spacing as needed */
+      }
+
+      .logo-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 5px; /* Adjust the spacing as needed */
+      }
+
+      /* New styles for the boxes */
+      .info-boxes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      .info-box {
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+      }
+
+      .info-box:hover {
+        transform: translateY(-10px); /* Move the box up by 10px on hover */
+      }
+
+      .info-box h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .info-box p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .info-box .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img
+              src="img/Rimas_logo_png.png"
+              alt="SmileSlot Logo"
+              class="logo-img"
+            />
+            <span class="logo-title">SMILESLOT </span>
+            <span class="logo-sub"> | RIMAS DENTAL CLINIC</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="login.php">LOGIN</a>
+          <a href="signup.php">REGISTER</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-wrapper">
+      <div class="container">
+        <p class="heading-text">
+          Skilled Dental Personnel With Local Experience When You Need It
+        </p>
+        <p class="sub-text2">
+          Book a schedule with our dental clinic without hassle.<br />
+          Our dentist will take care of your problems.<br />
+          Make your appointment now.
+        </p>
+        <a href="login.php" class="btn-primary">Make Appointment</a>
+      </div>
+      <div class="logo-image">
+        <img src="img/Rimas_logo.png" alt="Rimas Logo" />
+      </div>
+    </div>
+
+    <!-- New Info Boxes Section -->
+    <div class="info-boxes">
+      <div class="info-box">
+        <h3>Contact Information</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@rimasclinic.com</p>
+      </div>
+      <div class="info-box">
+        <h3>Book Now</h3>
+        <p>Schedule your appointment</p>
+        <p>with ease.</p>
+        <a href="signup.php" class="btn-primary">Register Now</a>
+      </div>
+      <div class="info-box">
+        <h3>Opening Hours</h3>
+        <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+        <p>Sat: 9:00 AM - 1:00 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+    </div>
+  </body>
+</html>
